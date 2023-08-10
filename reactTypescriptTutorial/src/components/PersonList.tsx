@@ -7,7 +7,7 @@ type PersonsListProps = {
     }[];
 };
 
-export const PersonList = (props: PersonsListProps) => {
+const PersonList = (props: PersonsListProps) => {
     return (
         <div>
             {props.names.map((name) => (
@@ -18,3 +18,5 @@ export const PersonList = (props: PersonsListProps) => {
         </div>
     );
 };
+
+export default PersonList;
