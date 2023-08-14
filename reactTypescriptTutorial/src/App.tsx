@@ -15,6 +15,7 @@ import { ThemeContextProvider } from './components/context/ThemeContext'
 import { Box } from './components/context/Box'
 import { Private } from './components/auth/Private'
 import RandomNumber from './components/restrictions/RandomNumber'
+import CustomButton from './components/html/CustomButton'
 
 
 function App() {
@@ -54,7 +55,8 @@ function App() {
       <Container styles={{border: '1px solid black', padding: '1rem'}} />
     
       <Private isLoggedIn={true} component={Profile} />
-      <RandomNumber value={10} isPositive/>
+      <RandomNumber value={10} isPositive isNegative isZero />
+      <CustomButton variant='primary'/>
     </div>
   )
 }
